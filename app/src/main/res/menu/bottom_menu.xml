@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/miscFragment"
+        android:icon="@drawable/misc_icon"
+        android:title="Bottom 1" />
+
+    <item
+        android:id="@+id/listUnitsFragment"
+        android:icon="@drawable/search_icon"
+        android:title="Bottom 2" />
+
+    <item
+        android:id="@+id/barracksFragment"
+        android:icon="@drawable/barrack_icon"
+        android:title="Bottom 3" />
+
+    <item
+        android:id="@+id/arenaFragment"
+        android:icon="@drawable/arena_icon"
+        android:title="Bottom 4" />
+</menu>

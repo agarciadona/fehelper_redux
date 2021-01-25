@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/titleFragment">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.myapplication.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/forgotPswdFragment"
+        android:name="com.example.myapplication.ForgotPswdFragment"
+        android:label="fragment_forgot_pswd"
+        tools:layout="@layout/fragment_forgot_pswd" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.myapplication.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/barracksFragment"
+        android:name="com.example.myapplication.BarracksFragment"
+        android:label="fragment_barracks"
+        tools:layout="@layout/fragment_barracks" />
+    <fragment
+        android:id="@+id/miscFragment"
+        android:name="com.example.myapplication.MiscFragment"
+        android:label="fragment_misc"
+        tools:layout="@layout/fragment_misc" />
+    <fragment
+        android:id="@+id/arenaFragment"
+        android:name="com.example.myapplication.ArenaFragment"
+        android:label="fragment_arena"
+        tools:layout="@layout/fragment_arena" />
+    <fragment
+        android:id="@+id/listUnitsFragment"
+        android:name="com.example.myapplication.ListUnitsFragment"
+        android:label="fragment_list_units"
+        tools:layout="@layout/fragment_list_units" />
+    <fragment
+        android:id="@+id/createTeamFragment"
+        android:name="com.example.myapplication.CreateTeamFragment"
+        android:label="fragment_create_team"
+        tools:layout="@layout/fragment_create_team" />
+    <fragment
+        android:id="@+id/unitDisplayFragment"
+        android:name="com.example.myapplication.UnitDisplayFragment"
+        android:label="fragment_unit_display"
+        tools:layout="@layout/fragment_unit_display" />
+    <fragment
+        android:id="@+id/weaponsFragment"
+        android:name="com.example.myapplication.WeaponsFragment"
+        android:label="fragment_weapons"
+        tools:layout="@layout/fragment_weapons" />
+    <fragment
+        android:id="@+id/skillsFragment"
+        android:name="com.example.myapplication.SkillsFragment"
+        android:label="fragment_skills"
+        tools:layout="@layout/fragment_skills" />
+    <fragment
+        android:id="@+id/sealsFragment"
+        android:name="com.example.myapplication.SealsFragment"
+        android:label="fragment_seals"
+        tools:layout="@layout/fragment_seals" />
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.myapplication.TitleFragment"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.myapplication.LoginFragment"
+        android:label="fragment_login2"
+        tools:layout="@layout/fragment_login2" />
+</navigation>
