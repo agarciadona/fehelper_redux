@@ -63,9 +63,9 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="413dp"
-        android:layout_height="287dp"
-        android:layout_marginBottom="124dp"
+        android:layout_width="416dp"
+        android:layout_height="236dp"
+        android:layout_marginBottom="84dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -77,10 +77,11 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageView23"
+            <ImageButton
+                android:id="@+id/imageButton12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#00DCDCDC"
                 app:srcCompat="@drawable/abelbanner" />
 
             <ImageView

@@ -12,18 +12,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.myapplication.databinding.FragmentBarracksBinding;
+import com.example.myapplication.databinding.FragmentLoginBinding;
 import com.example.myapplication.databinding.FragmentTitleBinding;
 
-public class BarracksFragment extends Fragment {
+public class loginFragment extends Fragment {
 
-
-    private FragmentBarracksBinding binding;
+    private FragmentLoginBinding binding;
     NavController navController;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return (binding = FragmentBarracksBinding.inflate(inflater, container, false)).getRoot();
+        return (binding = FragmentLoginBinding.inflate(inflater, container, false)).getRoot();
     }
 
     @Override
@@ -31,24 +30,33 @@ public class BarracksFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
 
-        binding.imageButton4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navController.navigate(R.id.action_barracksFragment_to_createTeamFragment);
-            }
-        });
         binding.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.action_barracksFragment_to_createTeamFragment);
+                navController.navigate(R.id.action_loginFragment_to_barracksFragment);
             }
         });
-        binding.imageButton3.setOnClickListener(new View.OnClickListener() {
+
+        binding.button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.popBackStack();
+                navController.navigate(R.id.action_loginFragment_to_registerFragment);
             }
         });
-        
+
+        binding.imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_loginFragment_to_barracksFragment);
+            }
+        });
+
+        binding.button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_loginFragment_to_forgotPswdFragment);
+            }
+        });
+
     }
 }

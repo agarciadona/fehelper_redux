@@ -46,7 +46,7 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_rounded"
         android:fontFamily="@font/muli_bold"
-        android:text="Inicia Sesión"
+        android:text="Registrarme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
@@ -60,7 +60,7 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_rounded_white"
         android:fontFamily="@font/muli_bold"
-        android:text="Registrarse"
+        android:text="Inicia Sesión"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
