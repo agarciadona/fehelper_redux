@@ -19,6 +19,7 @@
         android:fontFamily="@font/muli_bold"
         android:hint="Buscar"
         android:inputType="textPersonName"
+        android:textColor="#000000"
         android:textColorHint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

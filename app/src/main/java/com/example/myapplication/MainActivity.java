@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         navController.addOnDestinationChangedListener((controller, destination, arguments) -> {
 
-            if(destination.getId() == R.id.titleFragment || destination.getId() == R.id.registerFragment || destination.getId() == R.id.forgotPswdFragment || destination.getId() == R.id.weaponsFragment || destination.getId() == R.id.skillsFragment || destination.getId() == R.id.sealsFragment || destination.getId() == R.id.unitDisplayFragment){
+            if(destination.getId() == R.id.titleFragment || destination.getId() == R.id.registerFragment || destination.getId() == R.id.forgotPswdFragment || destination.getId() == R.id.weaponsFragment || destination.getId() == R.id.skillsFragment || destination.getId() == R.id.sealsFragment || destination.getId() == R.id.unitDisplayFragment || destination.getId() == R.id.createTeamFragment){
                 binding.bottomNavView.setVisibility(View.GONE);
             } else {
                 binding.bottomNavView.setVisibility(View.VISIBLE);
