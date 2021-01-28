@@ -6,6 +6,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.myapplication.databinding.ActivityMainBinding;
 
@@ -22,6 +23,17 @@ public class MainActivity extends AppCompatActivity {
 
         NavController navController = ((NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment)).getNavController();
         NavigationUI.setupWithNavController(binding.bottomNavView, navController);
+
+        navController.addOnDestinationChangedListener((controller, destination, arguments) -> {
+
+            if(destination.getId() == R.id.titleFragment || destination.getId() == R.id.registerFragment || destination.getId() == R.id.forgotPswdFragment || destination.getId() == R.id.weaponsFragment || destination.getId() == R.id.skillsFragment || destination.getId() == R.id.sealsFragment || destination.getId() == R.id.unitDisplayFragment){
+                binding.bottomNavView.setVisibility(View.GONE);
+            } else {
+                binding.bottomNavView.setVisibility(View.VISIBLE);
+            }
+
+
+        });
 
     }
 }

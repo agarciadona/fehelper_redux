@@ -24,12 +24,26 @@
         android:id="@+id/barracksFragment"
         android:name="com.example.myapplication.BarracksFragment"
         android:label="fragment_barracks"
-        tools:layout="@layout/fragment_barracks" />
+        tools:layout="@layout/fragment_barracks" >
+        <action
+            android:id="@+id/action_barracksFragment_to_createTeamFragment"
+            app:destination="@id/createTeamFragment" />
+    </fragment>
     <fragment
         android:id="@+id/miscFragment"
         android:name="com.example.myapplication.MiscFragment"
         android:label="fragment_misc"
-        tools:layout="@layout/fragment_misc" />
+        tools:layout="@layout/fragment_misc" >
+        <action
+            android:id="@+id/action_miscFragment_to_weaponsFragment"
+            app:destination="@id/weaponsFragment" />
+        <action
+            android:id="@+id/action_miscFragment_to_skillsFragment"
+            app:destination="@id/skillsFragment" />
+        <action
+            android:id="@+id/action_miscFragment_to_sealsFragment"
+            app:destination="@id/sealsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/arenaFragment"
         android:name="com.example.myapplication.ArenaFragment"
@@ -39,12 +53,23 @@
         android:id="@+id/listUnitsFragment"
         android:name="com.example.myapplication.ListUnitsFragment"
         android:label="fragment_list_units"
-        tools:layout="@layout/fragment_list_units" />
+        tools:layout="@layout/fragment_list_units" >
+        <action
+            android:id="@+id/action_listUnitsFragment_to_unitDisplayFragment"
+            app:destination="@id/unitDisplayFragment" />
+    </fragment>
     <fragment
         android:id="@+id/createTeamFragment"
         android:name="com.example.myapplication.CreateTeamFragment"
         android:label="fragment_create_team"
-        tools:layout="@layout/fragment_create_team" />
+        tools:layout="@layout/fragment_create_team" >
+        <action
+            android:id="@+id/action_createTeamFragment_to_listUnitsFragment"
+            app:destination="@id/listUnitsFragment" />
+        <action
+            android:id="@+id/action_createTeamFragment_to_unitDisplayFragment"
+            app:destination="@id/unitDisplayFragment" />
+    </fragment>
     <fragment
         android:id="@+id/unitDisplayFragment"
         android:name="com.example.myapplication.UnitDisplayFragment"
@@ -69,10 +94,21 @@
         android:id="@+id/titleFragment"
         android:name="com.example.myapplication.TitleFragment"
         android:label="fragment_title"
-        tools:layout="@layout/fragment_title" />
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.myapplication.LoginFragment"
         android:label="fragment_login2"
-        tools:layout="@layout/fragment_login2" />
+        tools:layout="@layout/fragment_login2" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPswdFragment"
+            app:destination="@id/forgotPswdFragment" />
+    </fragment>
 </navigation>
