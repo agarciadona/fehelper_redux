@@ -14,6 +14,9 @@ import android.view.ViewGroup;
 
 import com.example.myapplication.databinding.FragmentBarracksBinding;
 import com.example.myapplication.databinding.FragmentTitleBinding;
+import com.thekhaeng.pushdownanim.PushDownAnim;
+
+import static com.thekhaeng.pushdownanim.PushDownAnim.MODE_SCALE;
 
 public class BarracksFragment extends Fragment {
 
@@ -37,12 +40,18 @@ public class BarracksFragment extends Fragment {
                 navController.navigate(R.id.action_barracksFragment_to_createTeamFragment);
             }
         });
-        binding.button.setOnClickListener(new View.OnClickListener() {
+
+        PushDownAnim.setPushDownAnimTo( binding.button)
+                .setScale( MODE_SCALE, 0.89f  )
+                .setDurationPush( PushDownAnim.DEFAULT_PUSH_DURATION )
+                .setDurationRelease( PushDownAnim.DEFAULT_RELEASE_DURATION )
+                .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 navController.navigate(R.id.action_barracksFragment_to_createTeamFragment);
             }
         });
+
         binding.imageButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

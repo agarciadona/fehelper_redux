@@ -14,6 +14,9 @@ import android.view.ViewGroup;
 
 import com.example.myapplication.databinding.FragmentLoginBinding;
 import com.example.myapplication.databinding.FragmentTitleBinding;
+import com.thekhaeng.pushdownanim.PushDownAnim;
+
+import static com.thekhaeng.pushdownanim.PushDownAnim.MODE_SCALE;
 
 public class loginFragment extends Fragment {
 
@@ -30,15 +33,22 @@ public class loginFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
 
-        binding.button.setOnClickListener(new View.OnClickListener() {
+        PushDownAnim.setPushDownAnimTo( binding.button)
+        .setScale( MODE_SCALE, 0.89f  )
+                .setDurationPush( PushDownAnim.DEFAULT_PUSH_DURATION )
+                .setDurationRelease( PushDownAnim.DEFAULT_RELEASE_DURATION )
+                .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 navController.navigate(R.id.action_loginFragment_to_barracksFragment);
             }
         });
 
-        binding.button2.setOnClickListener(new View.OnClickListener() {
-            @Override
+        PushDownAnim.setPushDownAnimTo( binding.button2)
+                .setScale( MODE_SCALE, 0.89f  )
+                .setDurationPush( PushDownAnim.DEFAULT_PUSH_DURATION )
+                .setDurationRelease( PushDownAnim.DEFAULT_RELEASE_DURATION )
+                .setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 navController.navigate(R.id.action_loginFragment_to_registerFragment);
             }
@@ -51,7 +61,11 @@ public class loginFragment extends Fragment {
             }
         });
 
-        binding.button3.setOnClickListener(new View.OnClickListener() {
+        PushDownAnim.setPushDownAnimTo( binding.button3)
+                .setScale( MODE_SCALE, 0.89f  )
+                .setDurationPush( PushDownAnim.DEFAULT_PUSH_DURATION )
+                .setDurationRelease( PushDownAnim.DEFAULT_RELEASE_DURATION )
+                .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 navController.navigate(R.id.action_loginFragment_to_forgotPswdFragment);

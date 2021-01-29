@@ -14,6 +14,9 @@ import android.view.ViewGroup;
 
 import com.example.myapplication.databinding.FragmentBarracksBinding;
 import com.example.myapplication.databinding.FragmentRegisterBinding;
+import com.thekhaeng.pushdownanim.PushDownAnim;
+
+import static com.thekhaeng.pushdownanim.PushDownAnim.MODE_SCALE;
 
 public class RegisterFragment extends Fragment {
 
@@ -30,13 +33,23 @@ public class RegisterFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
 
-        binding.button.setOnClickListener(new View.OnClickListener() {
+        PushDownAnim.setPushDownAnimTo( binding.button)
+                .setScale( MODE_SCALE, 0.89f  )
+                .setDurationPush( PushDownAnim.DEFAULT_PUSH_DURATION )
+                .setDurationRelease( PushDownAnim.DEFAULT_RELEASE_DURATION )
+                .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 navController.navigate(R.id.action_registerFragment_to_loginFragment);
             }
         });
-        binding.button2.setOnClickListener(new View.OnClickListener() {
+
+
+        PushDownAnim.setPushDownAnimTo( binding.button2)
+                .setScale( MODE_SCALE, 0.89f  )
+                .setDurationPush( PushDownAnim.DEFAULT_PUSH_DURATION )
+                .setDurationRelease( PushDownAnim.DEFAULT_RELEASE_DURATION )
+                .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 navController.navigate(R.id.action_registerFragment_to_loginFragment);
