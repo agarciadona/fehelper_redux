@@ -23,7 +23,6 @@ public class UnitDisplayFragment extends Fragment {
 
     private Dialog dialog;
     private FragmentUnitDisplayBinding binding;
-    private PopupBinding popupBinding;
     NavController navController;
     private Button button,button2;
 

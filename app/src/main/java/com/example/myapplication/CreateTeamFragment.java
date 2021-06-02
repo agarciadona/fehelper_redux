@@ -37,7 +37,78 @@ public class CreateTeamFragment extends Fragment {
                 navController.navigate(R.id.action_createTeamFragment_to_unitDisplayFragment);
             }
         });
-        binding.imageButton3.setOnClickListener(new View.OnClickListener() {
+
+        binding.imageButton26.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_createTeamFragment_to_unitDisplayFragment);
+            }
+        });
+
+        binding.imageButton25.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_createTeamFragment_to_unitDisplayFragment);
+            }
+        });
+
+        binding.imageButton24.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_createTeamFragment_to_unitDisplayFragment);
+            }
+        });
+
+        binding.imageButton28.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_createTeamFragment_to_unitDisplayFragment);
+            }
+        });
+
+        binding.imageButton29.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_createTeamFragment_to_unitDisplayFragment);
+            }
+        });
+
+        binding.imageButton30.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_createTeamFragment_to_unitDisplayFragment);
+            }
+        });
+
+        binding.imageButton31.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_createTeamFragment_to_unitDisplayFragment);
+            }
+        });
+
+        binding.imageButton32.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_createTeamFragment_to_unitDisplayFragment);
+            }
+        });
+
+        binding.imageButton33.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.popBackStack();
+            }
+        });
+
+        binding.imageButton34.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.popBackStack();
+            }
+        });
+
+        binding.imageButton35.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 navController.popBackStack();
