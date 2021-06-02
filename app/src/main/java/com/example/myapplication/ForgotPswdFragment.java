@@ -59,7 +59,7 @@ public class ForgotPswdFragment extends Fragment {
 
                     @Override
                     public void onClick(View v) {
-                        dialog.setContentView(R.layout.popup_pswd);
+                        dialog.setContentView(R.layout.popuppswd);
                         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                         dialog.show();
 

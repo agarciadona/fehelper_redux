@@ -7,24 +7,20 @@
     tools:context=".MainActivity"
     android:background="#D6F5FF">
 
-
     <TextView
         android:id="@+id/textView75"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="64dp"
-        android:background="@android:color/darker_gray"
         android:fontFamily="@font/muli_bold"
         android:text="Lista de sellos"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -39,24 +35,30 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="415dp"
-        android:layout_height="603dp"
-        android:layout_marginTop="152dp"
+        android:layout_width="368dp"
+        android:layout_height="568dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView75"
+        app:layout_constraintVertical_bias="0.237">
 
-        <LinearLayout
+        <com.google.android.flexbox.FlexboxLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="200sp"
+            app:alignContent="space_between"
+            app:alignItems="center"
+            app:dividerDrawable="@drawable/divider2"
+            app:flexDirection="column"
+            app:flexWrap="wrap"
+            app:showDivider="beginning|middle">
 
             <TextView
                 android:id="@+id/textView40"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Gorrión Veloz 2"
                 android:textAlignment="center"
@@ -69,9 +71,9 @@
 
             <TextView
                 android:id="@+id/textView41"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Golpe Duro 2"
                 android:textAlignment="center"
@@ -84,9 +86,9 @@
 
             <TextView
                 android:id="@+id/textView42"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Asalto Espejo 2"
                 android:textAlignment="center"
@@ -99,9 +101,9 @@
 
             <TextView
                 android:id="@+id/textView43"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Golpe Mortal 3"
                 android:textAlignment="center"
@@ -114,9 +116,9 @@
 
             <TextView
                 android:id="@+id/textView44"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Presteza 3"
                 android:textAlignment="center"
@@ -129,9 +131,9 @@
 
             <TextView
                 android:id="@+id/textView45"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Recuperación 3"
                 android:textAlignment="center"
@@ -144,9 +146,9 @@
 
             <TextView
                 android:id="@+id/textView46"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Amago Ata 3"
                 android:textAlignment="center"
@@ -159,9 +161,9 @@
 
             <TextView
                 android:id="@+id/textView47"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Rompecontra 3"
                 android:textAlignment="center"
@@ -174,9 +176,9 @@
 
             <TextView
                 android:id="@+id/textView48"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Impulsar Ata 3"
                 android:textAlignment="center"
@@ -189,9 +191,9 @@
 
             <TextView
                 android:id="@+id/textView49"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Impulsar Vel 3"
                 android:textAlignment="center"
@@ -204,9 +206,9 @@
 
             <TextView
                 android:id="@+id/textView50"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Guardia Cercana 3"
                 android:textAlignment="center"
@@ -219,9 +221,9 @@
 
             <TextView
                 android:id="@+id/textView51"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Guardia Lejana 3"
                 android:textAlignment="center"
@@ -234,9 +236,9 @@
 
             <TextView
                 android:id="@+id/textView52"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Pulso acelerado"
                 android:textAlignment="center"
@@ -249,9 +251,9 @@
 
             <TextView
                 android:id="@+id/textView53"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Espejismo Vel 3"
                 android:textAlignment="center"
@@ -264,9 +266,9 @@
 
             <TextView
                 android:id="@+id/textView54"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Porte recio 3"
                 android:textAlignment="center"
@@ -279,9 +281,9 @@
 
             <TextView
                 android:id="@+id/textView55"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Antigolpes 3"
                 android:textAlignment="center"
@@ -294,9 +296,9 @@
 
             <TextView
                 android:id="@+id/textView56"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Botas Blindadas"
                 android:textAlignment="center"
@@ -309,9 +311,9 @@
 
             <TextView
                 android:id="@+id/textView57"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Marcha Coraza 3"
                 android:textAlignment="center"
@@ -322,36 +324,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="153dp" />
 
-            <TextView
-                android:id="@+id/textView58"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@color/light_grey"
-                android:fontFamily="@font/muli_bold"
-                android:text="Humo de Ata 3"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="24sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="73dp" />
 
-            <TextView
-                android:id="@+id/textView59"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@color/light_grey"
-                android:fontFamily="@font/muli_bold"
-                android:text="Humo de Vel 3"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="24sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.166"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="113dp" />
-
-        </LinearLayout>
+        </com.google.android.flexbox.FlexboxLayout>
     </ScrollView>
 
 

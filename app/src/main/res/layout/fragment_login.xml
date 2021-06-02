@@ -15,7 +15,7 @@
         android:fontFamily="@font/muli_bold"
         android:text="Inicia Sesión"
         android:textColor="#000000"
-        android:textSize="36sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +31,7 @@
         android:background="@drawable/button_fullround_google"
         android:ems="10"
         android:fontFamily="@font/muli_bold"
-        android:hint="Email"
+        android:hint="  Email"
         android:inputType="textPersonName"
         android:textColor="@color/black"
         android:textColorHint="#000000"
@@ -49,7 +49,7 @@
         android:background="@drawable/button_fullround_google"
         android:ems="10"
         android:fontFamily="@font/muli_bold"
-        android:hint="Contraseña"
+        android:hint="  Contraseña"
         android:inputType="textPersonName"
         android:textColor="@color/black"
         android:textColorHint="#000000"
@@ -58,14 +58,12 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
 
-
-
     <Button
         android:id="@+id/button"
         android:layout_width="319dp"
         android:layout_height="52dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_rounded"
         android:fontFamily="@font/muli_bold"
@@ -112,9 +110,8 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.333" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

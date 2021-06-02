@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="64dp"
         android:fontFamily="@font/muli_bold"
         android:text="Editor de equipos"
         android:textColor="#000000"

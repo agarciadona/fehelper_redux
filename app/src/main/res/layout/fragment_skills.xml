@@ -13,12 +13,11 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="64dp"
-        android:background="@android:color/darker_gray"
         android:fontFamily="@font/muli_bold"
         android:text="Lista de habilidades"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,24 +36,30 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="415dp"
-        android:layout_height="603dp"
-        android:layout_marginTop="152dp"
+        android:layout_width="368dp"
+        android:layout_height="568dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView75"
+        app:layout_constraintVertical_bias="0.254">
 
-        <LinearLayout
+        <com.google.android.flexbox.FlexboxLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="200sp"
+            app:alignContent="space_between"
+            app:alignItems="center"
+            app:dividerDrawable="@drawable/divider2"
+            app:flexDirection="column"
+            app:flexWrap="wrap"
+            app:showDivider="beginning|middle">
 
             <TextView
                 android:id="@+id/textView40"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="PV+5"
                 android:textAlignment="center"
@@ -67,9 +72,9 @@
 
             <TextView
                 android:id="@+id/textView41"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Ata+3"
                 android:textAlignment="center"
@@ -82,9 +87,9 @@
 
             <TextView
                 android:id="@+id/textView42"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Vel+3"
                 android:textAlignment="center"
@@ -97,9 +102,9 @@
 
             <TextView
                 android:id="@+id/textView43"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Def+3"
                 android:textAlignment="center"
@@ -112,9 +117,9 @@
 
             <TextView
                 android:id="@+id/textView44"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Repeler"
                 android:textAlignment="center"
@@ -127,9 +132,9 @@
 
             <TextView
                 android:id="@+id/textView45"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Permutar"
                 android:textAlignment="center"
@@ -142,9 +147,9 @@
 
             <TextView
                 android:id="@+id/textView46"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Atraer"
                 android:textAlignment="center"
@@ -157,9 +162,9 @@
 
             <TextView
                 android:id="@+id/textView47"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Cabriola"
                 android:textAlignment="center"
@@ -172,9 +177,9 @@
 
             <TextView
                 android:id="@+id/textView48"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Aliento Vital 3"
                 android:textAlignment="center"
@@ -187,9 +192,9 @@
 
             <TextView
                 android:id="@+id/textView49"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Arrebato brutal 3"
                 android:textAlignment="center"
@@ -202,9 +207,9 @@
 
             <TextView
                 android:id="@+id/textView50"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Curar"
                 android:textAlignment="center"
@@ -217,9 +222,9 @@
 
             <TextView
                 android:id="@+id/textView51"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Mejorar"
                 android:textAlignment="center"
@@ -232,9 +237,9 @@
 
             <TextView
                 android:id="@+id/textView52"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Trocar"
                 android:textAlignment="center"
@@ -247,9 +252,9 @@
 
             <TextView
                 android:id="@+id/textView53"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Empujar"
                 android:textAlignment="center"
@@ -262,9 +267,9 @@
 
             <TextView
                 android:id="@+id/textView54"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Alba"
                 android:textAlignment="center"
@@ -277,9 +282,9 @@
 
             <TextView
                 android:id="@+id/textView55"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Ocaso"
                 android:textAlignment="center"
@@ -292,9 +297,9 @@
 
             <TextView
                 android:id="@+id/textView56"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Helios"
                 android:textAlignment="center"
@@ -307,9 +312,9 @@
 
             <TextView
                 android:id="@+id/textView57"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:background="@color/light_grey"
+                android:background="@drawable/button_rounded_2"
                 android:fontFamily="@font/muli_bold"
                 android:text="Novilunio"
                 android:textAlignment="center"
@@ -320,7 +325,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="153dp" />
 
-        </LinearLayout>
+        </com.google.android.flexbox.FlexboxLayout>
     </ScrollView>
 
 

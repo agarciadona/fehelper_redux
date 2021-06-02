@@ -31,6 +31,14 @@ public class CreateTeamFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
 
+        binding.imageButton3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.popBackStack();
+            }
+        });
+
+
         binding.imageButton12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

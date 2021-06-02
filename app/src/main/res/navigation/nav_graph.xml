@@ -56,7 +56,11 @@
         android:id="@+id/arenaFragment"
         android:name="com.example.myapplication.ArenaFragment"
         android:label="fragment_arena"
-        tools:layout="@layout/fragment_arena" />
+        tools:layout="@layout/fragment_arena" >
+        <action
+            android:id="@+id/action_arenaFragment_to_unitDisplayFragment"
+            app:destination="@id/unitDisplayFragment" />
+    </fragment>
     <fragment
         android:id="@+id/listUnitsFragment"
         android:name="com.example.myapplication.ListUnitsFragment"
